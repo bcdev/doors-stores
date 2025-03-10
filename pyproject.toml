@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doors_stores"
+version = "0.1.dev0"
+authors = [
+  { name="Tonio Fincke" },
+]
+description = """\
+    A collection of stores to access DOORS data, based on the xcube store framework.
+    """
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "aiohttp>=3.6",
+    "lxml>=4.5",
+    "nest-asyncio>=1.3",
+    "numpy>=2",
+    "pydap>=3.4",
+    "xcube-core>=1.4.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pytest-cov"
+]
+
+[project.entry-points."xcube_plugins"]
+    doors_stores = "doors_stores.plugin:init_plugin"
+
+[project.urls]
+"Homepage" = "https://github.com/bcdev/doors-stores"
+"Changelog" = "https://github.com/bcdev/doors-stores/CHANGES.md"
+"Release notes" = "https://github.com/bcdev/doors-stores/releases"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = [
+  "test*",
+  "examples*"
+]
