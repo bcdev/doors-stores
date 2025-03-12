@@ -171,8 +171,5 @@ TIME_URL_TEMPLATE = "https://erddap-danubius.ve.ismar.cnr.it/erddap/griddap/kass
 MVP_URL_TEMPLATE = "https://erddap-danubius.ve.ismar.cnr.it/erddap/griddap/kassandra_bs.nc?mean_wave_period%5B({timestep}):1:({timestep})%5D%5B(40.9):1:(46.64)%5D%5B(27.46):1:(41.78)%5D"
 SWH_URL_TEMPLATE = "https://erddap-danubius.ve.ismar.cnr.it/erddap/griddap/kassandra_bs.nc?sign_wave_height%5B({timestep}):1:({timestep})%5D%5B(40.9):1:(46.64)%5D%5B(27.46):1:(41.78)%5D"
 WD_URL_TEMPLATE = "https://erddap-danubius.ve.ismar.cnr.it/erddap/griddap/kassandra_bs.nc?wave_direction%5B({timestep}):1:({timestep})%5D%5B(40.9):1:(46.64)%5D%5B(27.46):1:(41.78)%5D"
-# SWH_URL_TEMPLATE = "https://erddap-danubius.ve.ismar.cnr.it/erddap/griddap/kassandra_bs.nc?mean_wave_period%5B(2025-03-08T01:00:00Z):1:(2025-03-08T01:00:00Z)%5D%5B(40.9):1:(46.64)%5D%5B(27.46):1:(41.78)%5D"
-# WD_URL_TEMPLATE = "https://erddap-danubius.ve.ismar.cnr.it/erddap/griddap/kassandra_bs.nc?mean_wave_period%5B(2025-03-08T01:00:00Z):1:(2025-03-08T01:00:00Z)%5D%5B(40.9):1:(46.64)%5D%5B(27.46):1:(41.78)%5D"
 
-# TIME_FORMAT = "yyyy-mm-ddThh:MM:ss:00Z"
 TIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
