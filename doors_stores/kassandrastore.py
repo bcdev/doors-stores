@@ -36,6 +36,7 @@ from typing import Dict
 from xcube.core.store.datatype import DataType
 from xcube.core.store import get_data_store_class
 
+from .constants import EMPTY_KERCHUNK_FILE
 from .constants import KERCHUNK_FILE_TEMPLATE
 from .constants import MVP_URL_TEMPLATE
 from .constants import SWH_URL_TEMPLATE
@@ -66,22 +67,30 @@ class KassandraKerchunkDataStore(ReferenceDataStore):
 
     def _read_das(self) -> Dict:
         response = requests.get(KASSANDRA_DATASET_ATTRIBUTE_STRUCTURE)
+        if response.status_code != 200:
+            return {}
         das_content = response.text
         return parse_das(das_content)
 
     def _get_num_timesteps(self) -> int:
         response = requests.get(KASSANDRA_DATASET_DESCRIPTOR_STRUCTURE)
+        if response != 200:
+            return 0
         dds = DDSParser(response.text).parse()
         return dds.get("time").size
 
     def _get_kassandra_reference_dictionary(self) -> Dict:
         das = self._read_das()
-        first_timestep = das.get("NC_GLOBAL").get("time_coverage_start")
-        last_timestep = das.get("NC_GLOBAL").get("time_coverage_end")
+        first_timestep = (das.get("NC_GLOBAL", {}).
+                          get("time_coverage_start", "2024-06-30T00:00:00Z"))
+        last_timestep = (das.get("NC_GLOBAL", {}).
+                         get("time_coverage_end", "2024-06-30T00:00:00Z"))
         num_time_steps = self._get_num_timesteps()
+        if num_time_steps == 0:
+            return EMPTY_KERCHUNK_FILE
 
         kass_ref = KERCHUNK_FILE_TEMPLATE.copy()
-        kass_ref["refs"][".zattrs"] = das.get("NC_GLOBAL")
+        kass_ref["refs"][".zattrs"] = das.get("NC_GLOBAL", {})
         kass_ref["refs"]["time/.zarray"]["shape"] = [num_time_steps]
         kass_ref["refs"]["time/.zarray"]["chunks"] = [num_time_steps]
         kass_ref["refs"]["time/0"][0] = TIME_URL_TEMPLATE.format(timestep=last_timestep)

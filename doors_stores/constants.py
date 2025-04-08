@@ -161,6 +161,71 @@ KERCHUNK_FILE_TEMPLATE = {
     }
 }
 
+
+
+EMPTY_KERCHUNK_FILE = {
+    "version": 1,
+    "refs": {
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        ".zattrs": {
+            "CDI": "Climate Data Interface version 1.9.10 (https://mpimet.mpg.de/cdi)",
+            "Conventions": "CF-1.4",
+            "source": "Model data produced by SHYFEM at ISMAR-CNR",
+            "institution": "ISMAR-CNR, Venice, Italy",
+            "title": "storm surge forecast in the black sea",
+            "references": "Model info: http://www.ismar.cnr.it/shyfem",
+            "contact": "email: georg.umgiesser@ismar.cnr.it",
+            "comment": "Data restriction: for academic research use only",
+            "NCO": "netCDF Operators version 4.9.7 (Homepage = http://nco.sf.net, Code = http://github.com/nco/nco)",
+            "CDO":"Climate Data Operators version 1.9.10 (https://mpimet.mpg.de/cdo)"
+        },
+        "lat/.zarray": {
+            "chunks":[3], "compressor": None, "dtype": "<f8", "fill_value": "NaN", "filters": None, "order": "C",
+            "shape": [3], "zarr_format": 2
+        },
+        "lat/.zattrs": {
+            "_ARRAY_DIMENSIONS":["lat"], "long_name": "latitude", "standard_name": "latitude", "units": "degrees_north"
+        },
+        "lat/0": "base64:AAAAAAAATsAAAAAAAAAAAAAAAAAAAE5A",
+        "lon/.zarray": {
+            "chunks":[6], "compressor": None, "dtype": "<f8", "fill_value": "NaN", "filters": None, "order": "C",
+            "shape": [6], "zarr_format":2
+        },
+        "lon/.zattrs": {
+            "_ARRAY_DIMENSIONS":["lon"],"long_name":"longitude","standard_name":"longitude","units":"degrees_east"
+        },
+        "lon/0": "base64:AAAAAADAYsAAAAAAAIBWwAAAAAAAAD7AAAAAAAAAPkAAAAAAAIBWQAAAAAAAwGJA",
+        "mean_wave_period/.zarray": {
+            "chunks": [2,3,6], "compressor": None, "dtype": "<f8", "fill_value": "NaN", "filters": None, "order": "C",
+            "shape": [2,3,6], "zarr_format":2
+        },
+        "mean_wave_period/.zattrs": {"_ARRAY_DIMENSIONS":["time", "lat", "lon"]},
+        "mean_wave_period/0.0.0":
+            "base64:AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/",
+        "sign_wave_height/.zarray": {
+            "chunks": [2,3,6], "compressor": None, "dtype": "<f8", "fill_value": "NaN", "filters": None, "order":"C",
+            "shape": [2,3,6], "zarr_format": 2
+        },
+        "sign_wave_height/.zattrs": {"_ARRAY_DIMENSIONS":["time", "lat", "lon"]},
+        "sign_wave_height/0.0.0": "base64:AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/",
+        "time/.zarray": {"chunks": [2], "compressor": None,"dtype": "<i8", "fill_value": None, "filters": None,
+                         "order": "C", "shape":[2], "zarr_format": 2},
+        "time/.zattrs": {
+            "_ARRAY_DIMENSIONS": ["time"], "calendar": "proleptic_gregorian", "units": "seconds since 1970-01-01"
+        },
+        "time/0": "base64:YKLCZwAAAAAgS8NnAAAAAA==",
+        "wave_direction/.zarray": {
+            "chunks": [2,3,6], "compressor": None, "dtype": "<f8", "fill_value": "NaN", "filters": None, "order": "C",
+            "shape": [2,3,6], "zarr_format": 2
+        },
+        "wave_direction/.zattrs": {"_ARRAY_DIMENSIONS": ["time", "lat", "lon"]},
+        "wave_direction/0.0.0":
+            "base64:AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/"
+    }
+}
+
 VARCHUNK_TEMPLATE = [
     "",
     8744,
