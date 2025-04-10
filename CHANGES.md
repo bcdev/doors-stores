@@ -1,4 +1,4 @@
-## Changes in 0.1.3 (in development)
+## Changes in 0.1.3
 * Fixed checking of response validity
 
 ## Changes in 0.1.2
