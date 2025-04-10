@@ -67,14 +67,14 @@ class KassandraKerchunkDataStore(ReferenceDataStore):
 
     def _read_das(self) -> Dict:
         response = requests.get(KASSANDRA_DATASET_ATTRIBUTE_STRUCTURE)
-        if response.status_code != 200:
+        if not response.ok:
             return {}
         das_content = response.text
         return parse_das(das_content)
 
     def _get_num_timesteps(self) -> int:
         response = requests.get(KASSANDRA_DATASET_DESCRIPTOR_STRUCTURE)
-        if response != 200:
+        if not response.ok:
             return 0
         dds = DDSParser(response.text).parse()
         return dds.get("time").size

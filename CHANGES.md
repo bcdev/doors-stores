@@ -1,4 +1,5 @@
 ## Changes in 0.1.3 (in development)
+* Fixed checking of response validity
 
 ## Changes in 0.1.2
 * Added default file to KASSANDRA kerchunk store to account for case when no online
