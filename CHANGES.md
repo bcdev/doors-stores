@@ -1,4 +1,7 @@
 ## Changes in 0.1.4 (after release)
+* Integrated PML Data: There is now an MsiKerchunkDataStore (to access PML MSI Data
+  over a THREDDS server) and an OlciKerchunkDataStore (to access PML OLCI Data).
+  Both Stores use Reference File Systems.
 
 ## Changes in 0.1.3
 * Fixed checking of response validity
