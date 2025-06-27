@@ -23,7 +23,7 @@ from abc import abstractmethod
 import unittest
 import xarray as xr
 
-from doors_stores import KassandraKerchunkDataStore
+from doors_stores.kassandrastore import KassandraKerchunkDataStore
 
 class KassandraKerchunkDataStoreTest(unittest.TestCase):
 
@@ -37,7 +37,7 @@ class KassandraKerchunkDataStoreTest(unittest.TestCase):
         self.assert_erddap_cube_ok(erddap_cube)
 
     def assert_erddap_cube_ok(self, cube: xr.Dataset):
-        self.assertEqual({"time": 6168, "lat": 288, "lon": 717}, cube.sizes)
+        self.assertEqual({"time": 8040, "lat": 288, "lon": 717}, cube.sizes)
         self.assertEqual({"lon", "time", "lat"}, set(cube.coords))
         self.assertEqual(
             {"mean_wave_period", "sign_wave_height", "wave_direction"},

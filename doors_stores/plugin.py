@@ -23,6 +23,8 @@ from xcube.constants import EXTENSION_POINT_DATA_STORES
 from xcube.util import extension
 
 from .constants import KASSANDRA_DATA_STORE_ID
+from .constants import MSI_DATA_STORE_ID
+from .constants import OLCI_DATA_STORE_ID
 
 
 def init_plugin(ext_registry: extension.ExtensionRegistry):
@@ -33,4 +35,21 @@ def init_plugin(ext_registry: extension.ExtensionRegistry):
         name=KASSANDRA_DATA_STORE_ID,
         description='xarray.Dataset in Kerchunk references format'
                     ' from Kassandra ERDDAP server'
+    )
+    ext_registry.add_extension(
+        loader=extension.import_component(
+            'doors_stores.msistore:MsiKerchunkDataStore'),
+        point=EXTENSION_POINT_DATA_STORES,
+        name=MSI_DATA_STORE_ID,
+        description='xarray.Dataset in Kerchunk references format'
+                    ' from PML THREDDS server'
+    )
+
+    ext_registry.add_extension(
+        loader=extension.import_component(
+            'doors_stores.olcistore:OlciKerchunkDataStore'),
+        point=EXTENSION_POINT_DATA_STORES,
+        name=OLCI_DATA_STORE_ID,
+        description='xarray.Dataset in Kerchunk references format'
+                    ' from PML THREDDS server'
     )

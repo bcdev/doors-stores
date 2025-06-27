@@ -1,0 +1,285 @@
+{
+  "data_id": "certo-v2-danube-msi-refls-v2",
+  "data_type": "dataset",
+  "bbox": [
+    28.27362558390226,
+    44.40172475745599,
+    29.88735177865612,
+    45.49802371541502
+  ],
+  "time_range": [
+    "2016-11-01",
+    "2024-12-30"
+  ],
+  "dims": {
+    "time": 1674,
+    "lat": 2034,
+    "lon": 2994
+  },
+  "spatial_res": 0.0005389867049956365,
+  "coords": {
+    "lat": {
+      "name": "lat",
+      "dtype": "float64",
+      "dims": [
+        "lat"
+      ],
+      "attrs": {
+        "standard_name": "latitude",
+        "long_name": "latitude",
+        "units": "degrees_north",
+        "axis": "Y",
+        "valid_min": -90.0,
+        "valid_max": 90.0,
+        "reference_datum": "geographical coordinates, WGS84 projection"
+      }
+    },
+    "lon": {
+      "name": "lon",
+      "dtype": "float64",
+      "dims": [
+        "lon"
+      ],
+      "attrs": {
+        "standard_name": "longitude",
+        "long_name": "longitude",
+        "units": "degrees_east",
+        "axis": "X",
+        "valid_min": 28.273895077254757,
+        "valid_max": 29.887082285303624,
+        "reference_datum": "geographical coordinates, WGS84 projection"
+      }
+    },
+    "time": {
+      "name": "time",
+      "dtype": "datetime64[ns]",
+      "dims": [
+        "time"
+      ],
+      "attrs": {
+        "standard_name": "time",
+        "long_name": "reference time of the lwq file",
+        "axis": "T"
+      }
+    }
+  },
+  "data_vars": {
+    "Rrs1610_rep": {
+      "name": "Rrs1610_rep",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "fully_normalized_water_leaving_reflectance_at_443nm",
+        "long_name": "reflectance at 1610 nm",
+        "units": "1/sr",
+        "radiation_wavelength": 1610.0,
+        "radiation_wavelength_units": "nm",
+        "description": "most representative spectrum of fully normalized water-leaving reflectance obtained within aggregation period from CERTO v2 atmospheric correction processor"
+      }
+    },
+    "Rrs443_rep": {
+      "name": "Rrs443_rep",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "fully_normalized_water_leaving_reflectance_at_443nm",
+        "long_name": "reflectance at 443 nm",
+        "units": "1/sr",
+        "radiation_wavelength": 443.0,
+        "radiation_wavelength_units": "nm",
+        "description": "most representative spectrum of fully normalized water-leaving reflectance obtained within aggregation period from CERTO v2 atmospheric correction processor"
+      }
+    },
+    "Rrs490_rep": {
+      "name": "Rrs490_rep",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "fully_normalized_water_leaving_reflectance_at_443nm",
+        "long_name": "reflectance at 490 nm",
+        "units": "1/sr",
+        "radiation_wavelength": 490.0,
+        "radiation_wavelength_units": "nm",
+        "description": "most representative spectrum of fully normalized water-leaving reflectance obtained within aggregation period from CERTO v2 atmospheric correction processor"
+      }
+    },
+    "Rrs560_rep": {
+      "name": "Rrs560_rep",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "fully_normalized_water_leaving_reflectance_at_443nm",
+        "long_name": "reflectance at 560 nm",
+        "units": "1/sr",
+        "radiation_wavelength": 560.0,
+        "radiation_wavelength_units": "nm",
+        "description": "most representative spectrum of fully normalized water-leaving reflectance obtained within aggregation period from CERTO v2 atmospheric correction processor"
+      }
+    },
+    "Rrs665_rep": {
+      "name": "Rrs665_rep",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "fully_normalized_water_leaving_reflectance_at_443nm",
+        "long_name": "reflectance at 665 nm",
+        "units": "1/sr",
+        "radiation_wavelength": 665.0,
+        "radiation_wavelength_units": "nm",
+        "description": "most representative spectrum of fully normalized water-leaving reflectance obtained within aggregation period from CERTO v2 atmospheric correction processor"
+      }
+    },
+    "Rrs705_rep": {
+      "name": "Rrs705_rep",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "fully_normalized_water_leaving_reflectance_at_443nm",
+        "long_name": "reflectance at 705 nm",
+        "units": "1/sr",
+        "radiation_wavelength": 705.0,
+        "radiation_wavelength_units": "nm",
+        "description": "most representative spectrum of fully normalized water-leaving reflectance obtained within aggregation period from CERTO v2 atmospheric correction processor"
+      }
+    },
+    "Rrs740_rep": {
+      "name": "Rrs740_rep",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "fully_normalized_water_leaving_reflectance_at_443nm",
+        "long_name": "reflectance at 740 nm",
+        "units": "1/sr",
+        "radiation_wavelength": 740.0,
+        "radiation_wavelength_units": "nm",
+        "description": "most representative spectrum of fully normalized water-leaving reflectance obtained within aggregation period from CERTO v2 atmospheric correction processor"
+      }
+    },
+    "Rrs783_rep": {
+      "name": "Rrs783_rep",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "fully_normalized_water_leaving_reflectance_at_443nm",
+        "long_name": "reflectance at 783 nm",
+        "units": "1/sr",
+        "radiation_wavelength": 783.0,
+        "radiation_wavelength_units": "nm",
+        "description": "most representative spectrum of fully normalized water-leaving reflectance obtained within aggregation period from CERTO v2 atmospheric correction processor"
+      }
+    },
+    "Rrs865_rep": {
+      "name": "Rrs865_rep",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "fully_normalized_water_leaving_reflectance_at_443nm",
+        "long_name": "reflectance at 865 nm",
+        "units": "1/sr",
+        "radiation_wavelength": 865.0,
+        "radiation_wavelength_units": "nm",
+        "description": "most representative spectrum of fully normalized water-leaving reflectance obtained within aggregation period from CERTO v2 atmospheric correction processor"
+      }
+    }
+  },
+  "attrs": {
+    "Conventions": "CF-1.4",
+    "acknowledgment": "DOORS project",
+    "contributor_name": "PML",
+    "contributor_url": "https://pml.ac.uk/",
+    "creator_email": "info@brockmann-consult.de",
+    "creator_name": "Brockmann Consult GmbH",
+    "creator_url": "www.brockmann-consult.de",
+    "description": "CERTO v2 processor, reflectance products are a blend of ACOLITE and POLYMER output",
+    "geospatial_lat_max": 45.497754222062525,
+    "geospatial_lat_min": 44.401994250808485,
+    "geospatial_lon_max": 29.887082285303624,
+    "geospatial_lon_min": 28.273895077254757,
+    "name": "certo-v2-danube-msi-refls-v2",
+    "project": "DOORS",
+    "time_coverage_end": "2024-12-30T09:14:04",
+    "time_coverage_start": "2016-11-01T12:00:00",
+    "title": "DOORS PML CERTO MSI Reflectances"
+  }
+}

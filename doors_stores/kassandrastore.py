@@ -36,14 +36,14 @@ from typing import Dict
 from xcube.core.store.datatype import DataType
 from xcube.core.store import get_data_store_class
 
-from .kassandraconstants import EMPTY_KERCHUNK_FILE
-from .kassandraconstants import KERCHUNK_FILE_TEMPLATE
-from .kassandraconstants import MVP_URL_TEMPLATE
-from .kassandraconstants import SWH_URL_TEMPLATE
-from .kassandraconstants import TIME_FORMAT
-from .kassandraconstants import TIME_URL_TEMPLATE
-from .kassandraconstants import VARCHUNK_TEMPLATE
-from .kassandraconstants import WD_URL_TEMPLATE
+from .constants import EMPTY_KERCHUNK_FILE
+from .constants import KERCHUNK_FILE_TEMPLATE
+from .constants import MVP_URL_TEMPLATE
+from .constants import SWH_URL_TEMPLATE
+from .constants import TIME_FORMAT
+from .constants import TIME_URL_TEMPLATE
+from .constants import VARCHUNK_TEMPLATE
+from .constants import WD_URL_TEMPLATE
 
 KASSANDRA_DATASET_ATTRIBUTE_STRUCTURE = "https://erddap-danubius.ve.ismar.cnr.it/erddap/griddap/kassandra_bs.das"
 KASSANDRA_DATASET_DESCRIPTOR_STRUCTURE = "https://erddap-danubius.ve.ismar.cnr.it/erddap/griddap/kassandra_bs.dds"

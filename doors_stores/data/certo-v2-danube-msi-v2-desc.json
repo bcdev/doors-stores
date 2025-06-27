@@ -1,0 +1,382 @@
+{
+  "data_id": "certo-v2-danube-msi-v2",
+  "data_type": "dataset",
+  "bbox": [
+    28.27362558390226,
+    44.40172475745599,
+    29.88735177865612,
+    45.49802371541502
+  ],
+  "time_range": [
+    "2016-11-01",
+    "2024-12-30"
+  ],
+  "dims": {
+    "lat": 2034,
+    "lon": 2994,
+    "time": 1674
+  },
+  "spatial_res": 0.0005389867049956365,
+  "coords": {
+    "lat": {
+      "name": "lat",
+      "dtype": "float64",
+      "dims": [
+        "lat"
+      ],
+      "attrs": {
+        "standard_name": "latitude",
+        "long_name": "latitude",
+        "units": "degrees_north",
+        "axis": "Y",
+        "valid_min": -90.0,
+        "valid_max": 90.0,
+        "reference_datum": "geographical coordinates, WGS84 projection"
+      }
+    },
+    "lon": {
+      "name": "lon",
+      "dtype": "float64",
+      "dims": [
+        "lon"
+      ],
+      "attrs": {
+        "standard_name": "longitude",
+        "long_name": "longitude",
+        "units": "degrees_east",
+        "axis": "X",
+        "valid_min": 28.273895077254757,
+        "valid_max": 29.887082285303624,
+        "reference_datum": "geographical coordinates, WGS84 projection"
+      }
+    },
+    "time": {
+      "name": "time",
+      "dtype": "datetime64[ns]",
+      "dims": [
+        "time"
+      ],
+      "attrs": {
+        "standard_name": "time",
+        "long_name": "reference time of the lwq file",
+        "axis": "T"
+      }
+    }
+  },
+  "data_vars": {
+    "blended_chla_top_2_reweighted": {
+      "name": "blended_chla_top_2_reweighted",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "mass_concentration_of_chlorophyll_a_in_water_body",
+        "long_name": "Chlorophyll-a concentration (mg m^-3)",
+        "units": "mg/m3",
+        "description": "blended from the per-pixel two highest scoring Optical Water Types derived from CERTO v2 reflectance outputs",
+        "trackingID": "1e50505b-625e-400a-a0f9-c42b2ee5cee8",
+        "Conventions": "CF-1.4"
+      }
+    },
+    "blended_tsm_top_2_reweighted": {
+      "name": "blended_tsm_top_2_reweighted",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "mass_concentration_of_suspended_matter_in_water_body",
+        "long_name": "Total Suspended Matter concentration (g m^-3)",
+        "units": "g/m3",
+        "description": "blended from the per-pixel two highest scoring Optical Water Types derived from CERTO v2 reflectance outputs",
+        "trackingID": "1e50505b-625e-400a-a0f9-c42b2ee5cee8",
+        "Conventions": "CF-1.4"
+      }
+    },
+    "owt_OWT_01": {
+      "name": "owt_OWT_01",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "optical_water_type_1",
+        "long_name": "optical water type membership for class 1",
+        "units": "1",
+        "trackingID": "1e50505b-625e-400a-a0f9-c42b2ee5cee8",
+        "Conventions": "CF-1.4"
+      }
+    },
+    "owt_OWT_02": {
+      "name": "owt_OWT_02",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "optical_water_type_2",
+        "long_name": "optical water type membership for class 2",
+        "units": "1",
+        "trackingID": "1e50505b-625e-400a-a0f9-c42b2ee5cee8",
+        "Conventions": "CF-1.4"
+      }
+    },
+    "owt_OWT_03": {
+      "name": "owt_OWT_03",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "optical_water_type_3",
+        "long_name": "optical water type membership for class 3",
+        "units": "1",
+        "trackingID": "1e50505b-625e-400a-a0f9-c42b2ee5cee8",
+        "Conventions": "CF-1.4"
+      }
+    },
+    "owt_OWT_04": {
+      "name": "owt_OWT_04",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "optical_water_type_4",
+        "long_name": "optical water type membership for class 4",
+        "units": "1",
+        "trackingID": "1e50505b-625e-400a-a0f9-c42b2ee5cee8",
+        "Conventions": "CF-1.4"
+      }
+    },
+    "owt_OWT_05": {
+      "name": "owt_OWT_05",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "optical_water_type_5",
+        "long_name": "optical water type membership for class 5",
+        "units": "1",
+        "trackingID": "1e50505b-625e-400a-a0f9-c42b2ee5cee8",
+        "Conventions": "CF-1.4"
+      }
+    },
+    "owt_OWT_06": {
+      "name": "owt_OWT_06",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "optical_water_type_6",
+        "long_name": "optical water type membership for class 6",
+        "units": "1",
+        "trackingID": "1e50505b-625e-400a-a0f9-c42b2ee5cee8",
+        "Conventions": "CF-1.4"
+      }
+    },
+    "owt_OWT_07": {
+      "name": "owt_OWT_07",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "optical_water_type_7",
+        "long_name": "optical water type membership for class 7",
+        "units": "1",
+        "trackingID": "1e50505b-625e-400a-a0f9-c42b2ee5cee8",
+        "Conventions": "CF-1.4"
+      }
+    },
+    "owt_OWT_08": {
+      "name": "owt_OWT_08",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "optical_water_type_8",
+        "long_name": "optical water type membership for class 8",
+        "units": "1",
+        "trackingID": "1e50505b-625e-400a-a0f9-c42b2ee5cee8",
+        "Conventions": "CF-1.4"
+      }
+    },
+    "owt_OWT_09": {
+      "name": "owt_OWT_09",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "optical_water_type_9",
+        "long_name": "optical water type membership for class 9",
+        "units": "1",
+        "trackingID": "1e50505b-625e-400a-a0f9-c42b2ee5cee8",
+        "Conventions": "CF-1.4"
+      }
+    },
+    "owt_OWT_10": {
+      "name": "owt_OWT_10",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "optical_water_type_10",
+        "long_name": "optical water type membership for class 10",
+        "units": "1",
+        "trackingID": "1e50505b-625e-400a-a0f9-c42b2ee5cee8",
+        "Conventions": "CF-1.4"
+      }
+    },
+    "owt_OWT_11": {
+      "name": "owt_OWT_11",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "optical_water_type_11",
+        "long_name": "optical water type membership for class 11",
+        "units": "1",
+        "trackingID": "1e50505b-625e-400a-a0f9-c42b2ee5cee8",
+        "Conventions": "CF-1.4"
+      }
+    },
+    "owt_dominant_OWT": {
+      "name": "owt_dominant_OWT",
+      "dtype": "float32",
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "chunks": [
+        1,
+        1017,
+        1497
+      ],
+      "attrs": {
+        "standard_name": "dominant_optical_water_type",
+        "long_name": "dominant Optical Water Type class",
+        "units": "",
+        "description": "per-pixel dominant class defined by highest membership across all Optical Water Type classes"
+      }
+    }
+  },
+  "attrs": {
+    "Conventions": "CF-1.4",
+    "acknowledgment": "DOORS project",
+    "contributor_name": "PML",
+    "contributor_url": "https://pml.ac.uk/",
+    "creator_email": "info@brockmann-consult.de",
+    "creator_name": "Brockmann Consult GmbH",
+    "creator_url": "www.brockmann-consult.de",
+    "description": "CERTO v2 processor, reflectance products are a blend of ACOLITE and POLYMER output",
+    "geospatial_lat_max": 45.497754222062525,
+    "geospatial_lat_min": 44.401994250808485,
+    "geospatial_lon_max": 29.887082285303624,
+    "geospatial_lon_min": 28.273895077254757,
+    "name": "certo-v2-danube-msi-v2",
+    "project": "DOORS",
+    "time_coverage_end": "2024-12-30T09:14:04",
+    "time_coverage_start": "2016-11-01T12:00:00",
+    "title": "DOORS PML CERTO MSI Constituents and Optical Water Types"
+  }
+}
