@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "doors_stores"
-version = "0.1.4"
+version = "0.1.5.dev0"
 authors = [
   { name="Tonio Fincke" },
 ]
@@ -48,6 +48,9 @@ dev = [
 
 [tool.setuptools]
 include-package-data = true
+
+[tool.setuptools.package-data]
+doors_stores = ["data/*"]
 
 [tool.setuptools.packages.find]
 exclude = [
