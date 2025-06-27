@@ -1,4 +1,4 @@
-## Changes in 0.1.5 (in development)
+## Changes in 0.1.5
 * Include package data
 
 ## Changes in 0.1.4
