@@ -1,3 +1,5 @@
+## Changes in 0.1.6 (in development)
+
 ## Changes in 0.1.5
 * Include package data
 
