@@ -127,7 +127,6 @@ class MsiKerchunkDataStore(ReferenceDataStore):
                         data = self.original_mapper[key]
                     except:
                         retries+=1
-                        print(f"Retry {retries} for {key}")
                         time.sleep(1)
                 if data is not None:
                     ref = self._reference.get("refs").get(key)
