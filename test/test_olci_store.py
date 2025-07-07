@@ -35,9 +35,9 @@ class OlciKerchunkDataStoreTest(unittest.TestCase):
         store = self.get_store()
         data_ids = store.list_data_ids()
         self.assertIsNotNone(data_ids)
-        self.assertEqual(2, len(data_ids))
-        self.assertEqual("CERTO_blk_OLCI_RES300_final_l3_product_ref", data_ids[0])
-        self.assertEqual("CERTO_blk_OLCI_RES300_final_l3_product_owt", data_ids[1])
+        self.assertEqual(8, len(data_ids))
+        self.assertIn("CERTO_blk_OLCI_RES300_final_l3_product_ref", data_ids)
+        self.assertIn("CERTO_blk_OLCI_RES300_final_l3_product_owt", data_ids)
 
     def test_open_olci_data(self):
         store = self.get_store()
