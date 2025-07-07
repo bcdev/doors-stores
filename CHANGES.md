@@ -1,4 +1,8 @@
-## Changes in 0.1.6 (in development)
+## Changes in 0.1.6
+* Updated PML Data: 
+  - Fixed reflectance ranges
+  - Fixed offsets of MSI chlorophyll, tsm, and dominant_owt
+  - Added missing OLCI times
 
 ## Changes in 0.1.5
 * Include package data
