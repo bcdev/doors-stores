@@ -1,3 +1,6 @@
+## Changes in 0.1.7
+* Fixed reference to OLCI OWT dataset
+
 ## Changes in 0.1.6
 * Updated PML Data: 
   - Fixed reflectance ranges
